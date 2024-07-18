@@ -1,0 +1,604 @@
+body
+{
+    margin-top: 0rem;
+    padding-top: 0rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.follow-link
+{
+    /* for light mode => */
+    color: #2e69ff;
+    /* for dark mode => */
+    /* color: #4894fd; */
+}
+.follow-link:hover
+{
+    text-decoration: underline;
+}
+#quora_logo_text
+{
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #b92b27;
+}
+.flex-navbar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 3.75rem;
+    align-items: center;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    z-index: 1002;
+}
+.flex-navbar > div
+{
+    margin-right: 0.5rem;
+}
+#user-post-search-box
+{
+    border-radius: 4px;
+    height: 2.5rem;
+    width: 35.8rem;
+}
+#try_quora_btn
+{
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 6.25rem;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
+}
+#try_quora_btn:hover
+{
+    scale: 1.1;
+}
+.flex-add_ques
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#add_ques_btn
+{
+    height: 2.125rem;
+    width: 6.25rem;
+    border-radius: 20px 0px 0px 20px; /*top-left top-right bottom-right bottom-left*/
+    transition: scale 0.3s ease-in-out;
+}
+#add_ques_btn:hover
+{
+    scale: 1.1;
+}
+#dropdown, #add_ques_btn
+{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #b92b27;
+    color: white;
+}
+#dropdown
+{
+    height: 2.125rem;
+    width: 2.5rem;
+    border-left: solid 1px brown;
+    border-radius: 20px 0px 0px 20px;
+    transform: scale(-1,-1);
+    transition: scale 0.3s ease-in-out;
+}
+#dropdown:hover
+{
+    scale: 1.1;
+}
+.nav_btns
+{
+    cursor: pointer;
+    background-color: white;
+    height: 3.125rem;
+    width: 2.75rem;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.705);
+    transition: color 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+.nav_btns:hover
+{
+    background-color: gainsboro;
+    opacity: 0.8;
+    color: black;
+    scale: 1.1;
+}
+#btn_flex_container
+{
+    display: flex;
+    flex-direction: row;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-container > div
+{
+    text-wrap: wrap;
+}
+/* .flex-container > div:nth-child(1), .flex-container > div:nth-child(2)
+{
+    margin-right: 0.625rem;
+} */
+#home_btn
+{
+    color: #b92b27;
+}
+#intrests_section
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.75rem;
+    width: 12.5rem;
+    height: 80dvh;
+    left: 0.3125rem;
+}
+.intrests
+{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+    background-color: #f1f2f2;
+    position: fixed;
+    /* width: 20%;
+    margin-left: -1.5rem; */
+    width: 24%;
+    margin-left: -2.9rem;
+}
+.intrests > div > button
+{
+    border: none;
+    outline: none;
+    background-color: #f1f2f2;
+    padding: 0.625rem;
+}
+.intrests > div > button:hover
+{
+    background-color: silver;
+    opacity: 0.8;
+    color: black;
+}
+.ad_images
+{
+    height: 50dvh;
+    width: 25dvw;
+}
+.ads
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f1f2f2;
+    padding: 0rem 0.5rem;
+    position: relative;
+    /* left: 1.8rem; */
+    left: 2.8rem;
+    box-sizing: border-box;
+    width: 30rem;
+}
+.ads > div
+{
+    padding-top: 4.375rem;
+}
+.ad:first-child
+{
+    margin-top: 2.1875rem;
+}
+/* .ad
+{
+    margin-bottom: -2.5rem;
+} */
+.posts
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.375rem;
+    background-color: #f1f2f2;
+    /* width: 52%; */
+    width: 44%;
+    word-wrap: break-word;
+    position: relative;
+    /* left: 3.5rem; */
+    left: 5.2rem;
+}
+/* .posts > div
+{
+    margin-top: 3.4375rem;
+} */
+#profile_innermost
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -0.1875rem;
+}
+#profile_innermost > div
+{
+    margin-left: 0.1875rem;
+    margin-right: 0.0625rem;
+}
+.user_image
+{
+    width: 3.125rem;
+    height: 3.125rem;
+    border: solid 1px black;
+    border-radius: 100%;
+}
+.post_link, #user_id_link
+{
+    color: black;
+    text-decoration: none;
+}
+#user_id_link
+{
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+#profile_outer
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+}
+.post
+{
+    /* margin: 0.625rem 0; */
+    margin: 0rem 0.9375rem;
+    padding: 0.625rem;
+    background-color: #f1f2f2;
+}
+#profile_outermost
+{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+}
+/* .post_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+#post_img
+{
+    text-align: center;
+}
+#post-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 1px black;
+    padding: 1rem;
+    margin-top: 3.4rem;
+    z-index: 1;
+}
+#post-box > #outer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* #post-box > div
+{
+    margin-right: 0rem;
+} */
+#post-box > div > img
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+#post-box > #outer > div > input[type="search"]
+{
+    border-radius: 5px;
+    width: 35dvw;
+    height: 2.5rem;
+}
+/* #post-box > #outer
+{
+    margin-right: 0rem;
+} */
+#post-box > #outer > #options
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+#post-box > #outer > #options > div
+{
+    padding: 0.2rem 5rem;
+    transition: background-color 0.2s linear;
+    border-radius: 1rem;
+}
+/* #options > div:nth-of-type(1)
+{
+    border-radius: 1rem 0rem 0rem 1rem;
+    top-left | top-right | bottom-right | bottom-left
+}
+#options > div:nth-of-type(3)
+{
+    border-radius: 0rem 1rem 1rem 0rem;
+    top-left | top-right | bottom-right | bottom-left
+} */
+#post-box > #outer > #options > div:hover
+{
+    background-color: gainsboro;
+}
+#post-box > #outer > #options > div > a
+{
+    text-decoration: none;
+    color: black;
+}
+#post-profile-pic-container
+{
+    border-radius: 50%;
+}
+#user-profile-photo
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+#user-profile-photo:hover
+{
+    transform: scale(1.1);
+}
+.post-pop-up-outer-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(36,36,36,.9);
+    overflow: hidden;
+    margin: 0rem;
+    padding: 0rem;
+    /* position: absolute; */
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    display: none;
+}
+.post-pop-up-inner-container
+{
+    position: absolute;
+    height: 80dvh;
+    width: 48dvw;
+    /* background-color: #262626; */
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+.post-content-textarea
+{
+    /* width: 44.81rem; 
+    height: 28rem; */
+    width: 98.5%;
+    height: 55.4dvh;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+/* for create post pop up => */
+/* #app-container
+{
+    position: fixed;
+} */
+.cancel-btn
+{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+.cancel-icon
+{
+    scale: 1.5;
+}
+.inner-flex-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-pop-up-modify-post-btn
+{
+    background-color: #2e69ff;
+    padding: 1rem;
+    border-radius: 18px;
+    width: 5rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.post-pop-up-modify-post-btn:disabled
+{
+    opacity: 0.5;
+}
+.post-title-input
+{
+    width: 98.5%;
+    height: 2.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    margin-bottom: 0.5625rem;
+}
+#post-icon
+{
+    color: gray;
+    scale: 10;
+}
+#empty-post-feed-msg-container
+{
+    /* margin: 0rem auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 33dvh;
+}
+#empty-post-feed-msg-container .msg
+{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.post-info-bar
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+}
+.post-more-options
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.post-more-options-container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2px;
+    /* padding: 0.5rem 1rem; */
+    cursor: pointer;
+    /* display: none; */
+}
+.post-more-options-container > input[type="submit"], .post-more-options-container > input[type="button"]
+{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: none;
+}
+.post-more-options-container > input:hover
+{
+    background-color: gainsboro;
+}
+#post-more-options-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+}
+#post-more-options-icon:hover
+{
+    background-color: gainsboro;
+}
+.searchbar
+{
+    padding-left: 0.5rem;
+}
+#searchbar-results
+{
+    background-color: white;
+    position: absolute;
+    height: 17.5rem;
+    width: 29.8rem;
+    /* left: 35.1rem; */
+    top: 3.2rem;
+    border-radius: 4px;
+    z-index: 1;
+    display: none;
+}
+#search-string-showcase
+{
+    margin-left: 0.5rem;
+}
+#submit-search-button
+{
+    width: 100%;
+    height: 3rem;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+}
+.search-profile
+{
+    width: 100%;
+    height: 3rem;
+    text-align: start;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: background-color 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+.search-profile:hover
+{
+    background-color: gainsboro;
+}
+.search-result-user-image
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+/* .search-result-user-name
+{
+    
+} */
+.profile-text
+{
+    color: #939598;
+}
+.search-results-match
+{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px)
+{
+    *
+    {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    *
+    {
+        font-size: 4px;
+    }
+}

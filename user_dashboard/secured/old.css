@@ -1,0 +1,334 @@
+body
+{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.follow-link
+{
+    /* for light mode => */
+    color: #2e69ff;
+    /* for dark mode => */
+    /* color: #4894fd; */
+}
+.follow-link:hover
+{
+    text-decoration: underline;
+}
+#quora_logo_text
+{
+    font-weight: bold;
+    font-size: 30px;
+    color: #b92b27;
+}
+.flex-navbar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    z-index: 999;
+}
+.flex-navbar > div
+{
+    margin-right: 0.5em;
+}
+#search_box
+{
+    border-radius: 4px;
+    height: 40px;
+    width: 400px;
+}
+#try_quora_btn
+{
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
+}
+#try_quora_btn:hover
+{
+    scale: 1.1;
+}
+.flex-add_ques
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#add_ques_btn
+{
+    height: 34px;
+    width: 100px;
+    border-radius: 20px 0px 0px 20px; /*top-left top-right bottom-right bottom-left*/
+    transition: scale 0.3s ease-in-out;
+}
+#add_ques_btn:hover
+{
+    scale: 1.1;
+}
+#dropdown, #add_ques_btn
+{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #b92b27;
+    color: white;
+}
+#dropdown
+{
+    height: 34px;
+    width: 40px;
+    border-left: solid 1px brown;
+    border-radius: 20px 0px 0px 20px;
+    transform: scale(-1,-1);
+    transition: scale 0.3s ease-in-out;
+}
+#dropdown:hover
+{
+    scale: 1.1;
+}
+.nav_btns
+{
+    cursor:pointer;
+    background-color: white;
+    height: 50px;
+    width: 44px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.705);
+    transition: color 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+.nav_btns:hover
+{
+    background-color: gainsboro;
+    opacity: 0.8;
+    color: black;
+    scale: 1.1;
+}
+#btn_flex_container
+{
+    display: flex;
+    flex-direction: row;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-container > div
+{
+    text-wrap: wrap;
+}
+.flex-container > div:nth-child(1), .flex-container > div:nth-child(2)
+{
+    margin-right: 10px;
+}
+#home_btn
+{
+    color:#b92b27;
+}
+#intrests_section
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    /* padding-left: 50px; */
+    width: 200px;
+    height: 80vh;
+    /* position: fixed; comment */
+    left: 5px;
+}
+.intrests
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f2f2;
+    position: fixed;
+    width: 15%;
+}
+.intrests > div > button
+{
+    border: none;
+    outline: none;
+    background-color: #f1f2f2;
+    padding: 10px;
+}
+.intrests > div > button:hover
+{
+    background-color: silver;
+    opacity: 0.8;
+    color: black;
+}
+.ad_images
+{
+    height: 50vh;
+    width: 25vw;
+}
+.ads
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position: sticky; */
+    background-color: #f1f2f2;
+}
+.ads > div
+{
+    padding-top: 70px;
+}
+/* .ad
+{
+    margin-bottom: -40px;
+} */
+#posts
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    /* margin-left: 13.5vw; comment */
+    background-color: #f1f2f2;
+    width: 45%;
+    word-wrap: break-word;
+}
+#posts > div
+{
+    margin-top: 55px;
+}
+#profile_innermost
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -3px;
+}
+#profile_innermost > div
+{
+    margin-left: 3px;
+    margin-right: 1px;
+}
+#user_image
+{
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 100%;
+}
+#post_link, #user_id_link
+{
+    color: black;
+    text-decoration: none;
+}
+#user_id_link
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+#profile_outer
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.post
+{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f1f2f2;
+}
+#profile_outermost
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#post_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#post_img
+{
+    text-align: center;
+}
+
+
+#post-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 1px black;
+    padding: 1em;
+}
+#post-box > #outer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#post-box > div > img
+{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+#post-box > #outer > div > input[type="search"]
+{
+    border-radius: 5px;
+    width: 35vw;
+}
+#post-box > #outer > #options
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+#post-box > #outer > #options > div
+{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+#post-box > #outer > #options > div > a
+{
+    text-decoration: none;
+    color: black;
+}
+#post-profile-pic-container
+{
+    border-radius: 50%;
+}
+#user-profile-photo
+{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+#user-profile-photo:hover
+{
+    transform: scale(1.1);
+}

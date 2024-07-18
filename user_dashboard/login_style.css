@@ -1,0 +1,44 @@
+body
+{
+    background: url('images/login_background.webp');
+    color: white;
+}
+.outer-flex-container
+{
+    background-color: #262626;
+    position: relative;
+    top: 30vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    height: 45vh;
+    width: 30%;
+    border-radius: 0.5em;
+}
+.outer-flex-container > div
+{
+    margin-bottom: 2em;
+}
+.outer-flex-container > :first-child
+{
+    margin-top: 1em;
+}
+.outer-flex-container :last-child > span
+{
+    margin-left: 1em;
+}
+input[type="text"], input[type="password"]
+{
+    color: white;
+    background-color: transparent;
+}
+@media(max-width: 1000px)
+{
+    .outer-flex-container
+    {
+        width: 85%;
+    }
+}

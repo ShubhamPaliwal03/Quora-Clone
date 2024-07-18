@@ -1,0 +1,81 @@
+body
+{
+    background: url('images/login_background.webp');
+    color: white;
+}
+.outer-flex-container
+{
+    background-color: #262626;
+    position: relative;
+    top: 17vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 75vh;
+    width: 30%;
+}
+.inner-flex-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.outer-flex-container div
+{
+    margin-bottom: 1em;
+}
+.inner-flex-container > :first-child
+{
+    margin-top: 1em;
+}
+.inner-flex-container :last-child > span
+{
+    margin-left: 1em;
+}
+input[type="text"], input[type="password"]
+{
+    width: 19.5em;
+}
+select
+{
+    width: 20em;
+}
+fieldset
+{
+    border-radius: 5px;
+}
+#error_msg
+{
+    display: none;
+    height: 1em;
+    width: 16.6em;
+    margin-top: 0.5em;
+    color: red;
+}
+#confirm_password_fieldset
+{
+    height: 2.6em;
+    transition : height 0.5s ease-in-out;
+}
+input[type="text"], input[type="password"]
+{
+    color: white;
+    background-color: transparent;
+}
+input[type="select"], input[type="option"]
+{
+    color: white;
+    background-color: #262626;
+}
+@media(max-width: 1000px)
+{
+    .outer-flex-container
+    {
+        width: 85%;
+    }
+}
